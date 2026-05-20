@@ -1,0 +1,33 @@
+baseURL = "https://naughtybeanconsulting.github.io/RoastPosLandingPages/"
+languageCode = "en-us"
+title = "RoastPOS"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "RoastPOS is an open-source, tablet-first point-of-sale system built for independent coffee shops, pastry counters, and small hospitality venues. Free to self-host. MIT licensed."
+  keywords = ["RoastPOS", "open source POS", "coffee shop POS", "tablet POS system", "self-hosted point of sale", "cafe POS", "hospitality POS", "free POS software", "Django POS", "MIT license POS"]
+  socialImage = "img/RoastPOSWhiteBG1024x1024.png"
+  socialImageAlt = "RoastPOS logo"
+  companyName = "Naughty Bean Consulting"
+  githubRepo = "https://github.com/NaughtyBeanConsulting/RoastPOS"
+  supportEmail = "hello@naughtybeanconsulting.com"
+  donationLink = "https://donations.naughtybeanconsulting.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Features"
+    url = "/#features"
+    weight = 10
+  [[menu.main]]
+    name = "How It Works"
+    url = "/#how-it-works"
+    weight = 20
+  [[menu.main]]
+    name = "Open Source"
+    url = "/#opensource"
+    weight = 30

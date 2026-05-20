@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ $title := cond .IsHome (printf "%s | Open-source tablet POS for coffee shops" .Site.Title) (printf "%s | %s" .Title .Site.Title) }}
+  {{ $description := .Description | default .Site.Params.description }}
+  {{ $keywords := delimit (or .Params.keywords .Site.Params.keywords) ", " }}
+  {{ $socialImage := (.Site.Params.socialImage | absURL) }}
+  {{ $pageURL := .Permalink }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $description }}">
+  <meta name="keywords" content="{{ $keywords }}">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="{{ .Site.Params.companyName }}">
+  <meta name="theme-color" content="#faf8f5">
+  <link rel="canonical" href="{{ $pageURL }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ .Site.Params.companyName }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:url" content="{{ $pageURL }}">
+  <meta property="og:image" content="{{ $socialImage }}">
+  <meta property="og:image:secure_url" content="{{ $socialImage }}">
+  <meta property="og:image:alt" content="{{ .Site.Params.socialImageAlt }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ $socialImage }}">
+  <meta name="twitter:image:alt" content="{{ .Site.Params.socialImageAlt }}">
+
+  <meta itemprop="name" content="{{ $title }}">
+  <meta itemprop="description" content="{{ $description }}">
+  <meta itemprop="image" content="{{ $socialImage }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{{ "img/RoastPOSWhiteBG1024x1024.png" | relURL }}" sizes="96x96">
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "RoastPOS",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "{{ $pageURL }}",
+    "image": "{{ $socialImage }}",
+    "description": "{{ $description }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ .Site.Params.companyName }}",
+      "url": "{{ .Site.BaseURL }}"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "sameAs": [
+      "{{ .Site.Params.githubRepo }}"
+    ]
+  }
+  </script>
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

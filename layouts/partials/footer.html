@@ -1,0 +1,23 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-title">RoastPOS</p>
+      <p class="footer-copy">An open-source, tablet-first point-of-sale system for independent coffee shops, pastry counters, and small hospitality venues. Free to self-host under the MIT licence.</p>
+    </div>
+    <div>
+      <p class="footer-title">Project</p>
+      <a href="{{ .Site.Params.githubRepo }}" target="_blank" rel="noopener">GitHub repository</a>
+      <a href="{{ .Site.Params.donationLink }}" target="_blank" rel="noopener">Buy Me A Naughty Bean Coffee</a>
+      <a href="mailto:{{ .Site.Params.supportEmail }}">Contact</a>
+    </div>
+    <div>
+      <p class="footer-title">Legal</p>
+      <a href="{{ "terms/" | relURL }}">Terms of service</a>
+      <a href="{{ "privacy/" | relURL }}">Privacy policy</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; Naughty Bean Consulting, 2026. All rights reserved.</p>
+    <p>RoastPOS is open-source software released under the MIT licence.</p>
+  </div>
+</footer>
