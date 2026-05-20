@@ -1,4 +1,4 @@
-baseURL = "https://naughtybeanconsulting.github.io/RoastPosLandingPages/"
+baseURL = "https://roastpos.naughtybean.consulting/"
 languageCode = "en-us"
 title = "RoastPOS"
 disableKinds = ["taxonomy", "term"]

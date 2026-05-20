@@ -38,7 +38,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "https://naughtybeanconsulting.github.io/RoastPosLandingPages/"
+            --baseURL "https://roastpos.naughtybean.consulting/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
