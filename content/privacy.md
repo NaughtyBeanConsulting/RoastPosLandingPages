@@ -13,7 +13,7 @@ This site may collect limited technical data that is normally available to web i
 
 ## Contact and correspondence
 
-If you contact us by email at [hello@naughtybeanconsulting.com](mailto:hello@naughtybeanconsulting.com), we may retain your message and contact details for the purpose of responding to your inquiry, maintaining project communications, or handling open-source collaboration discussions.
+If you contact us by email at [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting), we may retain your message and contact details for the purpose of responding to your inquiry, maintaining project communications, or handling open-source collaboration discussions.
 
 ## Donations and payment providers
 
@@ -39,8 +39,8 @@ This site does not set any tracking cookies. Basic session cookies may be set by
 
 ## Your rights
 
-Where applicable under law, you may have the right to access, correct, or request deletion of any personal data we hold in connection with this site. Contact us at [hello@naughtybeanconsulting.com](mailto:hello@naughtybeanconsulting.com) with any such requests.
+Where applicable under law, you may have the right to access, correct, or request deletion of any personal data we hold in connection with this site. Contact us at [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting) with any such requests.
 
 ## Contact
 
-Questions about privacy can be sent to [hello@naughtybeanconsulting.com](mailto:hello@naughtybeanconsulting.com).
+Questions about privacy can be sent to [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting).

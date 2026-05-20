@@ -41,4 +41,4 @@ These terms may be updated from time to time. Continued use of the site after ch
 
 ## Contact
 
-Questions about these terms can be sent to [hello@naughtybeanconsulting.com](mailto:hello@naughtybeanconsulting.com).
+Questions about these terms can be sent to [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting).
