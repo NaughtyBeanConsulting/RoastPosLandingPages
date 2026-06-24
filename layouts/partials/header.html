@@ -1,10 +1,10 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="{{ .Site.Home.RelPermalink }}">
-      <img src="{{ "img/RoastPOSWhiteBG1024x1024.png" | relURL }}" alt="RoastPOS logo" class="brand-logo">
+      <img src="{{ "img/RoastPOSBlackBG1024x1024.png" | relURL }}" alt="RoastPOS logo" class="brand-logo">
       <div>
         <span class="brand-name">RoastPOS</span>
-        <span class="brand-tag">Open-source coffee shop POS</span>
+        <span class="brand-tag">POS for independent coffee shops</span>
       </div>
     </a>
     <nav class="main-nav" aria-label="Primary">
@@ -13,11 +13,8 @@
       {{ end }}
     </nav>
     <div class="header-actions">
-      <a class="button ghost" href="{{ .Site.Params.githubRepo }}" target="_blank" rel="noopener">GitHub</a>
-      <a class="button coffee" href="{{ .Site.Params.donationLink }}" target="_blank" rel="noopener">
-        <img src="{{ "img/Naughty Bean Coffee-05.png" | relURL }}" alt="Naughty Bean Coffee logo">
-        <span>Buy Me A Naughty Bean Coffee</span>
-      </a>
+      <a class="button ghost" href="#features">Features</a>
+      <a class="button primary" href="mailto:{{ .Site.Params.supportEmail }}?subject=RoastPOS%20quote%20request">Get a quote</a>
     </div>
   </div>
 </header>

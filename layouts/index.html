@@ -1,254 +1,174 @@
 {{ define "main" }}
 
-{{/* ── Hero ─────────────────────────────────────────────────── */}}
-<section class="hero-section">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Tablet-first. Open source. MIT licensed.</p>
-      <h1>The POS built for independent coffee shops.</h1>
-      <p class="hero-lead">RoastPOS handles the full cashier workflow — from live menu display and modifier selection through to stock deduction and receipt generation — with a management portal for configuring inventory, pricing, team access, and reporting. Free to self-host, forever.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="{{ .Site.Params.githubRepo }}" target="_blank" rel="noopener">View on GitHub</a>
-        <a class="button ghost" href="#features">Explore features</a>
-      </div>
-      <div class="hero-meta">
-        <div>
-          <span class="meta-label">What it is</span>
-          <strong>A self-hosted tablet POS system</strong>
-        </div>
-        <div>
-          <span class="meta-label">Built for</span>
-          <strong>Coffee shops, cafés &amp; pastry counters</strong>
-        </div>
-        <div>
-          <span class="meta-label">Licence</span>
-          <strong>MIT — free to use &amp; modify</strong>
-        </div>
-      </div>
+<section class="hero-section" id="top">
+  <div class="hero-media" aria-hidden="true"></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <img class="hero-logo" src="{{ "img/RoastPOSBlackBG1024x1024.png" | relURL }}" alt="RoastPOS logo">
+    <p class="eyebrow">RoastPOS for independent coffee shops</p>
+    <h1>A sharper POS for serious coffee service.</h1>
+    <p class="hero-lead">Run fast counter sales, ingredient-level stock, multi-location operations, team access, till sessions, and reporting from a modern interface built for tablets and mobile devices.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="mailto:{{ .Site.Params.supportEmail }}?subject=RoastPOS%20quote%20request">Contact us for a quote</a>
+      <a class="button secondary" href="#features">See features</a>
     </div>
-    <div class="hero-panel">
-      <div class="callout-panel hero-message-card">
-        <p class="eyebrow">What RoastPOS does</p>
-        <h2>A complete POS terminal and management portal, all in one open-source project.</h2>
-        <p>From pulling shots to printing receipts — RoastPOS covers the cashier flow, stock management, and back-office reporting in a single self-hosted Django application. No subscription. No lock-in.</p>
-      </div>
-      <div class="hero-badge-stack">
-        <div class="info-card">
-          <span class="card-kicker">Why self-host it</span>
-          <strong>Your data stays with you</strong>
-          <p>No cloud dependency, no transaction fees, no vendor lock-in. Install it on your own server and own your sales data completely.</p>
-        </div>
-        <div class="info-card">
-          <span class="card-kicker">Best fit</span>
-          <strong>Independent venues with 1–5 locations</strong>
-          <p>Built specifically for small hospitality operators who need a capable POS without the enterprise price tag or opaque SaaS pricing.</p>
-        </div>
-      </div>
+    <div class="hero-proof" aria-label="RoastPOS highlights">
+      <span>Tablet-first terminal</span>
+      <span>Ingredient BOM costing</span>
+      <span>Multi-location ready</span>
     </div>
   </div>
 </section>
 
-{{/* ── Features ─────────────────────────────────────────────── */}}
-<section id="features" class="section-block muted">
+<section class="section-block intro-band">
+  <div class="container intro-grid">
+    <div>
+      <p class="eyebrow">Built around the way cafes actually work</p>
+      <h2>One system for the rush, the recipes, and the close-out.</h2>
+    </div>
+    <p>RoastPOS brings the sales floor and back office together for independent cafes that need more than a basic checkout screen. Every menu item can connect to real ingredients, modifiers can change recipes, and every location can keep its own stock, till, and team controls.</p>
+  </div>
+</section>
+
+<section id="features" class="section-block">
   <div class="container">
     <div class="section-heading">
-      <p class="eyebrow">Core features</p>
-      <h2>Everything a busy coffee shop needs, nothing it doesn't.</h2>
-      <p>RoastPOS was designed from the ground up for the pace of a counter service venue — fast ordering, precise stock tracking, and a back-office that doesn't slow you down.</p>
+      <p class="eyebrow">Feature set</p>
+      <h2>Everything your coffee shop needs to sell, track, and tighten operations.</h2>
     </div>
-    <div class="card-grid three-up">
-      <article class="feature-card">
-        <div class="feature-icon">☕</div>
-        <h3>BOM Menu Builder</h3>
-        <p>Build recipes from real ingredients. Each menu item tracks its bill of materials — milk, espresso shots, syrups — so cost price is calculated automatically and stock deducts on every sale.</p>
+    <div class="feature-grid">
+      <article class="feature-card feature-card-large">
+        <span class="feature-number">01</span>
+        <h3>Inventory Management</h3>
+        <p>Track ingredient masters, supplier costs, reorder levels, stock receipts, adjustments, and per-location quantities so your team knows what can actually be sold.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-icon">⚙️</div>
+        <span class="feature-number">02</span>
+        <h3>Bill of Materials</h3>
+        <p>Build each menu item from its real ingredients, from espresso shots and milk to syrups, cups, and packaged goods.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-number">03</span>
         <h3>Modifier Groups</h3>
-        <p>Add size and extras modifiers with price deltas and ingredient overrides. A Large Flat White can use 450 ml milk instead of 350 ml without duplicating the recipe.</p>
+        <p>Create size, milk, syrup, extra shot, and add-on groups with clean cashier prompts and optional price changes.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-icon">📦</div>
-        <h3>Real-time Stock Tracking</h3>
-        <p>Every confirmed sale instantly deducts the correct ingredient quantities per location. Low-stock alerts and reorder levels keep your pantry from running dry mid-service.</p>
+        <span class="feature-number">04</span>
+        <h3>Component Overrides</h3>
+        <p>Let a modifier change the recipe itself, such as a large latte using more milk without duplicating the entire menu item.</p>
+      </article>
+      <article class="feature-card feature-card-dark">
+        <span class="feature-number">05</span>
+        <h3>Multiple Locations</h3>
+        <p>Manage branches under one organisation while keeping stock levels, till sessions, team access, and reporting separated by location.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-icon">🏪</div>
-        <h3>Multi-location Support</h3>
-        <p>Run one organisation across multiple locations. Each location has its own stock levels, till sessions, and cashier access — managed centrally from a single portal.</p>
+        <span class="feature-number">06</span>
+        <h3>Sales Reporting</h3>
+        <p>Review sales by date range, location, and payment type, then export clean CSVs for finance or deeper analysis.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-icon">👥</div>
-        <h3>Role-based Access</h3>
-        <p>Owner, Admin, Manager, and Cashier roles control exactly who can access the portal, manage the team, or open a till. Cashiers only see the POS terminal for their assigned locations.</p>
+        <span class="feature-number">07</span>
+        <h3>Tablet and Mobile Optimized</h3>
+        <p>Use the POS terminal comfortably on tablets and phones, with a PWA-friendly flow for installed home-screen use.</p>
       </article>
       <article class="feature-card">
-        <div class="feature-icon">📊</div>
-        <h3>Sales Reports</h3>
-        <p>Review sales by payment type and date range. Till sessions track opening floats, closing cash, and variance so reconciliation is fast and evidence-backed.</p>
+        <span class="feature-number">08</span>
+        <h3>Opening and Closing Tills</h3>
+        <p>Record opening floats, close sessions, compare counted cash against expected cash, and capture notes for variance.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-number">09</span>
+        <h3>Team Management</h3>
+        <p>Invite owners, admins, managers, and cashiers with location access, cash-up PINs, void controls, and role-aware portal access.</p>
+      </article>
+      <article class="feature-card feature-card-accent">
+        <span class="feature-number">10</span>
+        <h3>Modern UI</h3>
+        <p>A clean, responsive interface for the POS terminal and management portal, designed to stay usable during a morning rush.</p>
       </article>
     </div>
   </div>
 </section>
 
-{{/* ── Deep-dive feature panels ─────────────────────────────── */}}
-<section class="section-block">
-  <div class="container split-section">
+<section id="workflows" class="section-block dark-band">
+  <div class="container workflow-grid">
+    <div class="workflow-copy">
+      <p class="eyebrow">Operational control</p>
+      <h2>Menu engineering meets stock discipline.</h2>
+      <p>RoastPOS connects recipes, modifiers, and inventory so your menu is not just a list of prices. It becomes an operating model for what each drink costs, what stock it consumes, and whether it can be made at a specific location.</p>
+    </div>
+    <div class="workflow-steps" aria-label="RoastPOS workflow">
+      <div>
+        <span>Ingredient master</span>
+        <strong>Define stock items, units, suppliers, costs, and reorder levels.</strong>
+      </div>
+      <div>
+        <span>BOM menu items</span>
+        <strong>Attach recipes to drinks, food, retail items, and combos.</strong>
+      </div>
+      <div>
+        <span>Modifiers</span>
+        <strong>Add size and option groups with price and recipe changes.</strong>
+      </div>
+      <div>
+        <span>Sales floor</span>
+        <strong>Ring up orders quickly while stock deducts behind the scenes.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reporting" class="section-block">
+  <div class="container operations-layout">
     <div>
-      <p class="eyebrow">Accurate costing</p>
-      <h2>Recipes that actually reflect what you pour.</h2>
-      <p>Most POS systems treat menu items as flat prices. RoastPOS uses a bill of materials model — each item is composed of real inventory ingredients with real unit costs. Adjust a supplier's milk price and every menu item's cost updates automatically.</p>
-      <ul class="check-list">
-        <li>Define inventory items with unit costs and reorder levels</li>
-        <li>Build BOM recipes from those ingredients</li>
-        <li>Markup multiplier computes selling price from cost</li>
-        <li>Modifier overrides handle size-based recipe variations</li>
-        <li>Stock is deducted ingredient-by-ingredient on every sale</li>
-      </ul>
+      <p class="eyebrow">Daily rhythm</p>
+      <h2>Made for opening, service, and end-of-day control.</h2>
+      <p class="section-copy">From the first float to the final cash-up, RoastPOS keeps the shop moving while giving owners the numbers they need to manage margin, staff, and stock.</p>
     </div>
-    <div class="diagram-card">
-      <div class="diagram-node">Define Inventory Items</div>
-      <div class="diagram-arrow">assign to recipes</div>
-      <div class="diagram-node">Build BOM Menu Items</div>
-      <div class="diagram-arrow">add size &amp; extras</div>
-      <div class="diagram-node">Attach Modifier Groups</div>
-      <div class="diagram-arrow">sale confirmed</div>
-      <div class="diagram-node">Stock Deducted Instantly</div>
-    </div>
-  </div>
-</section>
-
-{{/* ── How it works ─────────────────────────────────────────── */}}
-<section id="how-it-works" class="section-block muted">
-  <div class="container split-section reverse">
-    <div class="callout-panel">
-      <p class="eyebrow">Designed for counter service</p>
-      <h2>From first login to your first sale in minutes.</h2>
-      <p>RoastPOS is built to be practical to deploy. Clone the repo, configure your environment, seed the demo data, and you'll have a working POS terminal before your coffee brews.</p>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <span>Backend</span>
-          <strong>Django 5.x</strong>
-        </div>
-        <div class="mini-card">
-          <span>Frontend</span>
-          <strong>HTMX + Alpine</strong>
-        </div>
-        <div class="mini-card">
-          <span>Styling</span>
-          <strong>Tailwind CSS</strong>
-        </div>
-      </div>
-    </div>
-    <div>
-      <p class="eyebrow">Get started</p>
-      <h2>Four steps to a live POS terminal.</h2>
-      <div class="card-grid" style="gap:1rem; margin-top:1.5rem;">
-        <div class="info-card">
-          <span class="card-kicker">Step 1</span>
-          <strong>Clone &amp; Install</strong>
-          <p>Clone the GitHub repo, create a Python virtual environment, and <code>pip install -r requirements.txt</code>. Node.js is optional — only needed to rebuild CSS.</p>
-        </div>
-        <div class="info-card">
-          <span class="card-kicker">Step 2</span>
-          <strong>Configure &amp; Migrate</strong>
-          <p>Add a <code>.env</code> file with your <code>SECRET_KEY</code>. Run <code>python manage.py migrate</code> to create the schema. Works out of the box with SQLite.</p>
-        </div>
-        <div class="info-card">
-          <span class="card-kicker">Step 3</span>
-          <strong>Seed Demo Data</strong>
-          <p>Run <code>python manage.py seed_demo_pos</code> for a complete demo workspace: organisation, location, owner account, full menu with BOM recipes, and stock levels.</p>
-        </div>
-        <div class="info-card">
-          <span class="card-kicker">Step 4</span>
-          <strong>Start Taking Orders</strong>
-          <p>Open the POS terminal at <code>/pos/&lt;org-slug&gt;/</code>, log in as a cashier, and start ringing up flat whites. The portal at <code>/portal/</code> gives full management access.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{/* ── Payment types ────────────────────────────────────────── */}}
-<section class="section-block">
-  <div class="container">
-    <div class="section-heading">
-      <p class="eyebrow">Flexible payments</p>
-      <h2>Accept cash, card, and more — no payment gateway required.</h2>
-      <p>RoastPOS records payment type against every order and rolls it up in sales reports. Accept however your customers pay without any third-party integration or transaction fee.</p>
-    </div>
-    <div class="card-grid two-up">
-      <article class="feature-card layer-card warm">
-        <span class="layer-index">Payment types</span>
-        <h3>Cash, Card, Bank Transfer &amp; Other</h3>
-        <p>Record the exact payment method for every sale. Till sessions track cash float, closing balance, and variance automatically — so cash-up at end of day is a single-screen process.</p>
-        <ul>
-          <li>Cash with opening float and closing reconciliation</li>
-          <li>Card payments recorded without a gateway</li>
-          <li>Bank transfer and custom payment types supported</li>
-          <li>Per-payment-type breakdown in sales reports</li>
-        </ul>
+    <div class="ops-grid">
+      <article>
+        <h3>Open the till</h3>
+        <p>Start each shift with a recorded float and location-aware till session.</p>
       </article>
-      <article class="feature-card layer-card cool">
-        <span class="layer-index">Till sessions</span>
-        <h3>Open and Close the Till With Confidence</h3>
-        <p>Each cashier shift is wrapped in a till session. RoastPOS calculates expected cash from opening float plus cash sales, then tracks the variance when you close out — no spreadsheet required.</p>
-        <ul>
-          <li>Per-location till session management</li>
-          <li>Opening float recorded at session start</li>
-          <li>Automatic expected cash calculation</li>
-          <li>Cash variance captured on close with notes</li>
-        </ul>
+      <article>
+        <h3>Sell fast</h3>
+        <p>Use category browsing, search, modifiers, discounts, tabs, and familiar payment types.</p>
+      </article>
+      <article>
+        <h3>Close cleanly</h3>
+        <p>Compare counted cash against expected cash and capture variance notes.</p>
+      </article>
+      <article>
+        <h3>Review performance</h3>
+        <p>Track sales, payment mix, location results, and CSV exports from the portal.</p>
       </article>
     </div>
   </div>
 </section>
 
-{{/* ── Open source ──────────────────────────────────────────── */}}
-<section id="opensource" class="section-block muted">
-  <div class="container split-section reverse">
-    <div class="callout-panel">
-      <p class="eyebrow">Open source, always</p>
-      <h2>Full source code. MIT licence. No strings attached.</h2>
-      <p>RoastPOS is built in the open and released under the MIT licence. Read the code, modify it for your venue, contribute improvements, or fork it entirely — no permissions needed and no licencing fees ever.</p>
-      <div class="mini-grid">
-        <div class="mini-card">
-          <span>Licence</span>
-          <strong>MIT</strong>
-        </div>
-        <div class="mini-card">
-          <span>Source</span>
-          <strong>GitHub</strong>
-        </div>
-        <div class="mini-card">
-          <span>Hosting</span>
-          <strong>Self-hosted</strong>
-        </div>
-      </div>
-    </div>
-    <div class="repo-card">
-      <p class="repo-label">Who it's for</p>
-      <h3>Independent venues that want a real POS without a monthly bill</h3>
-      <p>RoastPOS is a solid fit when you run a coffee shop, café, or pastry counter and want a tablet POS that tracks stock properly, manages a small team, and doesn't come with a subscription attached. Deploy it on a cheap VPS or Raspberry Pi — it's just a Django app.</p>
-      <div class="repo-actions">
-        <a class="button primary" href="{{ .Site.Params.githubRepo }}" target="_blank" rel="noopener">Open GitHub repo</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-{{/* ── CTA ───────────────────────────────────────────────────── */}}
-<section class="section-block">
-  <div class="container cta-banner">
+<section id="customers" class="section-block customers-band">
+  <div class="container customers-layout">
     <div>
-      <p class="eyebrow">Support the project</p>
-      <h2>Love RoastPOS? Buy the developer a coffee.</h2>
-      <p>RoastPOS is free and open-source. If it's useful for your venue, consider supporting continued development with a small donation.</p>
+      <p class="eyebrow">Customers</p>
+      <h2>Trusted by independent operators.</h2>
+      <p class="section-copy">RoastPOS is built with real coffee shop workflows in mind, from menu setup and stock control to till operations and daily reporting.</p>
     </div>
-    <a class="button coffee xl" href="{{ .Site.Params.donationLink }}" target="_blank" rel="noopener">
+    <a class="customer-card" href="https://www.naughtybean.coffee" target="_blank" rel="noopener" aria-label="Visit Naughty Bean Coffee">
       <img src="{{ "img/Naughty Bean Coffee-05.png" | relURL }}" alt="Naughty Bean Coffee logo">
-      <span>Buy Me A Naughty Bean Coffee</span>
+      <span>Naughty Bean Coffee</span>
     </a>
+  </div>
+</section>
+
+<section id="quote" class="section-block quote-band">
+  <div class="container quote-layout">
+    <div>
+      <p class="eyebrow">Contact us for a quote</p>
+      <h2>Bring RoastPOS into your coffee shop.</h2>
+      <p>Tell us about your locations, devices, team size, and menu complexity. We will shape a quote around the setup, deployment, and support your shop needs.</p>
+    </div>
+    <a class="button primary" href="mailto:{{ .Site.Params.supportEmail }}?subject=RoastPOS%20quote%20request">Contact us for a quote</a>
   </div>
 </section>
 

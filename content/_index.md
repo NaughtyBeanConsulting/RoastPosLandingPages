@@ -1,5 +1,5 @@
 +++
 title = "RoastPOS"
-description = "RoastPOS is an open-source, tablet-first point-of-sale system built for independent coffee shops, pastry counters, and small hospitality venues. Free to self-host. MIT licensed."
+description = "RoastPOS is a modern point-of-sale and operations platform for independent coffee shops, with inventory management, bill of materials, modifiers, multi-location support, till control, and sales reporting."
 draft = false
 +++

@@ -1,14 +1,19 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <p class="footer-title">RoastPOS</p>
-      <p class="footer-copy">An open-source, tablet-first point-of-sale system for independent coffee shops, pastry counters, and small hospitality venues. Free to self-host under the MIT licence.</p>
+      <div class="footer-brand">
+        <img src="{{ "img/RoastPOSBlackBG1024x1024.png" | relURL }}" alt="RoastPOS logo" class="footer-logo">
+        <p class="footer-title">RoastPOS</p>
+      </div>
+      <p class="footer-copy">A modern point-of-sale and operations platform for independent coffee shops, cafes, and small hospitality teams that care about stock, recipes, reporting, and daily till control.</p>
     </div>
     <div>
-      <p class="footer-title">Project</p>
-      <a href="{{ .Site.Params.githubRepo }}" target="_blank" rel="noopener">GitHub repository</a>
-      <a href="{{ .Site.Params.donationLink }}" target="_blank" rel="noopener">Buy Me A Naughty Bean Coffee</a>
-      <a href="mailto:{{ .Site.Params.supportEmail }}">Contact</a>
+      <p class="footer-title">Product</p>
+      <a href="{{ "/#features" | relURL }}">Features</a>
+      <a href="{{ "/#workflows" | relURL }}">Workflows</a>
+      <a href="{{ "/#reporting" | relURL }}">Reporting</a>
+      <a href="{{ "/#customers" | relURL }}">Customers</a>
+      <a href="mailto:{{ .Site.Params.supportEmail }}?subject=RoastPOS%20quote%20request">Contact us for a quote</a>
     </div>
     <div>
       <p class="footer-title">Legal</p>
@@ -18,6 +23,6 @@
   </div>
   <div class="container footer-bottom">
     <p>&copy; Naughty Bean Consulting, 2026. All rights reserved.</p>
-    <p>RoastPOS is open-source software released under the MIT licence.</p>
+    <p>Designed for independent coffee shops and cafe teams.</p>
   </div>
 </footer>

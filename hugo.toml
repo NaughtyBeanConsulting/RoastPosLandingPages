@@ -4,14 +4,12 @@ title = "RoastPOS"
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "RoastPOS is an open-source, tablet-first point-of-sale system built for independent coffee shops, pastry counters, and small hospitality venues. Free to self-host. MIT licensed."
-  keywords = ["RoastPOS", "open source POS", "coffee shop POS", "tablet POS system", "self-hosted point of sale", "cafe POS", "hospitality POS", "free POS software", "Django POS", "MIT license POS"]
-  socialImage = "img/RoastPOSWhiteBG1024x1024.png"
+  description = "RoastPOS is a modern point-of-sale and operations platform for independent coffee shops, with inventory management, bill of materials, modifiers, multi-location support, till control, and sales reporting."
+  keywords = ["RoastPOS", "coffee shop POS", "cafe POS", "tablet POS system", "mobile POS", "inventory management POS", "bill of materials POS", "modifier groups POS", "multi-location POS", "sales reporting POS"]
+  socialImage = "img/HeroHoldingDevicesHiResRoastPOS.png"
   socialImageAlt = "RoastPOS logo"
   companyName = "Naughty Bean Consulting"
-  githubRepo = "https://github.com/NaughtyBeanConsulting/RoastPOS"
   supportEmail = "hello@naughtybean.consulting"
-  donationLink = "https://donations.naughtybeanconsulting.com"
 
 [markup]
   [markup.goldmark]
@@ -24,10 +22,18 @@ disableKinds = ["taxonomy", "term"]
     url = "/#features"
     weight = 10
   [[menu.main]]
-    name = "How It Works"
-    url = "/#how-it-works"
+    name = "Workflows"
+    url = "/#workflows"
     weight = 20
   [[menu.main]]
-    name = "Open Source"
-    url = "/#opensource"
+    name = "Reporting"
+    url = "/#reporting"
     weight = 30
+  [[menu.main]]
+    name = "Customers"
+    url = "/#customers"
+    weight = 40
+  [[menu.main]]
+    name = "Quote"
+    url = "/#quote"
+    weight = 50

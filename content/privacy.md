@@ -5,7 +5,7 @@ eyebrow = "Legal"
 draft = false
 +++
 
-This privacy policy explains how the RoastPOS marketing site handles information. RoastPOS is an open-source, self-hosted project, and this site is intended primarily to provide project information, repository links, and contact details.
+This privacy policy explains how the RoastPOS marketing site handles information. The site is intended to provide product information and let coffee shop operators contact Naughty Bean Consulting (Pty) Ltd about RoastPOS.
 
 ## Website data
 
@@ -13,21 +13,27 @@ This site may collect limited technical data that is normally available to web i
 
 ## Contact and correspondence
 
-If you contact us by email at [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting), we may retain your message and contact details for the purpose of responding to your inquiry, maintaining project communications, or handling open-source collaboration discussions.
+If you contact us by email at [hello@naughtybean.consulting](mailto:hello@naughtybean.consulting), we may retain your message and contact details for the purpose of responding to your inquiry, preparing a quote, discussing implementation needs, or maintaining customer communications.
 
-## Donations and payment providers
+## Payments and service providers
 
-If you choose to use a donation link from this site, payment processing will be handled by a third-party payment provider. We do not control that provider's data handling practices. You should review the provider's privacy policy before submitting payment information.
+If you enter into a paid arrangement with Naughty Bean Consulting (Pty) Ltd, payments or related operational services may be handled by third-party providers. We do not control those providers' data handling practices. You should review the relevant provider policies before submitting payment information.
 
-## Open-source project data
+## RoastPOS deployments
 
-If you interact with the RoastPOS GitHub repository, those interactions are governed by GitHub's own privacy terms and platform policies.
+RoastPOS is deployed in the customer's own environment unless a separate written agreement says otherwise. The customer has full access to, control over, and responsibility for the data stored in that environment.
 
-## Self-hosted deployments
+Naughty Bean Consulting (Pty) Ltd does not store, host, access, or process operational RoastPOS data by default. This includes, without limitation, customer records, customer orders, sales records, menu items, stock data, supplier data, team member data, reports, configuration, and any other business data entered into the customer's RoastPOS environment.
 
-The RoastPOS software is self-hosted by its users. Data processed inside a self-hosted RoastPOS deployment — including customer orders, sales records, and staff details — is controlled entirely by the operator running that deployment, not by this marketing site or Naughty Bean Consulting.
+The customer is responsible for operating, securing, backing up, and managing access to their RoastPOS environment unless a separate written service-level agreement or support agreement says otherwise.
 
-Operators of self-hosted RoastPOS installations are responsible for their own privacy compliance, including applicable data protection regulations in their jurisdiction.
+## SLA and support access
+
+If the customer enters into a separate SLA, support, hosting, maintenance, or managed services agreement with Naughty Bean Consulting (Pty) Ltd, the customer may grant Naughty Bean Consulting (Pty) Ltd access to the customer's environment for the limited purpose of performing those agreed services.
+
+Any such access will be governed by the applicable written agreement. Naughty Bean Consulting (Pty) Ltd will only access or process customer environment data to the extent required to perform the agreed services, such as support, troubleshooting, maintenance, backups, hosting, monitoring, upgrades, or incident response.
+
+Operators of RoastPOS installations are responsible for their own privacy compliance, including applicable data protection regulations in their jurisdiction, unless responsibilities are expressly allocated differently in a separate written agreement.
 
 ## Analytics
 
